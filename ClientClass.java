@@ -38,17 +38,17 @@ public class ClientClass {
         UserClass changedByServerFromClientSide = (UserClass) objectInputStream.readObject();
         logger.info("Client's got object from Server" + "\n");
         if (!(changedByServerFromClientSide.getName().equals(userClass.getName()))) {
-            logger.info("Server changed Name name from "
+            logger.info("Server changed name from "
                     + userClass.getName()
                     + " to " + changedByServerFromClientSide.getName() + "\n");
         }
         if (!(changedByServerFromClientSide.getSurName().equals(userClass.getSurName()))) {
-            logger.info("Server changed SurName name from "
+            logger.info("Server changed surname from "
                     + userClass.getSurName()
                     + " to " + changedByServerFromClientSide.getSurName() + "\n");
         }
         if (changedByServerFromClientSide.getAge() != userClass.getAge()) {
-            logger.info("Server changed SurName name from "
+            logger.info("Server changed age from "
                     + userClass.getSurName()
                     + " to " + changedByServerFromClientSide.getSurName() + "\n");
         }

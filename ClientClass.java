@@ -36,7 +36,7 @@ public class ClientClass {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
         UserClass changedByServerFromClientSide = (UserClass) objectInputStream.readObject();
-        logger.info("Client've got object from Server" + "\n");
+        logger.info("Client's got object from Server" + "\n");
         if (!(changedByServerFromClientSide.getName().equals(userClass.getName()))) {
             logger.info("Server changed Name name from "
                     + userClass.getName()
